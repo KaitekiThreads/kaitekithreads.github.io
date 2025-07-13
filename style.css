@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+h1 {
+  color: #333;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+a {
+  color: blue;
+}
