@@ -1,7 +1,3 @@
-/*
-    Basic reset to remove default browser margins and paddings.
-    This is a good practice for consistent layouts.
-*/
 html {
     scroll-behavior: smooth;
 }
@@ -16,52 +12,37 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*
-    Styling for the main header section.
-    We give it a light gray background color and a subtle shadow.
-*/
 .main-header {
     background-color: #f1f1f0;
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
 }
 
-/*
-    This container is the key to our layout.
-    We'll use Flexbox to align our elements.
-*/
-.header-container {
-    max-width: 1200px; /* Limits the container width for a clean look */
-    margin: 0 auto;    /* Centers the container horizontally */
-    padding: 0 20px;   /* Adds some padding on the sides */
-    display: flex;     /* Turns this into a flex container */
-    justify-content: space-between; /* Pushes items to the far ends */
-    align-items: center; /* Vertically aligns the items in the center */
-}
 
-/*
-    Styling for the logo text.
-*/
+.header-container {
+    max-width: 1200px; 
+    margin: 0 auto;   
+    padding: 0 20px;   
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+
+
 .logo a {
-    font-family: 'Times New Roman', Times, serif; /* Using a classic font for the logo */
-    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-decoration: none;
     color: #333;
 }
 
-/*
-    Styling the main navigation menu.
-*/
+
 .main-nav ul {
-    list-style: none; /* Removes the bullet points from the list */
-    display: flex;    /* Uses Flexbox to put list items in a row */
-    gap: 25px;       /* Adds space between the menu items */
+    list-style: none;
+    display: flex;   
+    gap: 25px;       
 }
 
-/*
-    Styling for the individual navigation links.
-*/
+
 .main-nav ul li a {
     text-decoration: none;
     color: #555;
@@ -75,18 +56,17 @@ body {
     color: #000;
 }
 
-/* Styling for the New Collections section */
 .new-collections {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 25px;
-    text-align: center; /* Centers the title and paragraph */
+    text-align: center; 
 }
 
-/* Styling for the title and paragraph container */
+
 .intro-container {
     max-width: 600px;
-    margin: 0 auto 50px; /* Centers and adds bottom margin */
+    margin: 0 auto 50px;
 }
 
 .intro-container h2 {
@@ -100,27 +80,22 @@ body {
     color: #666;
 }
 
-/* This is the Flexbox container for the entire carousel.
-    It holds the navigation arrows and the product boxes.
-*/
+
 .product-carousel {
     display: flex;
-    justify-content: center; /* Centers the product row within the carousel */
-    align-items: center; /* Vertically aligns all items */
-    gap: 20px; /* Space between the arrows and the product row */
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
 }
 
-/* The container for the three product boxes.
-    It also uses Flexbox to arrange the images horizontally.
-*/
+
 .product-row {
     display: flex;
-    gap: 30px; /* Space between the product boxes */
+    gap: 30px;
 }
 
-/* Styles for an individual product box */
 .product-box {
-    flex: 1; /* Makes each box take up equal space */
+    flex: 1; 
     background-color: #fff;
     text-align: left;
 }
@@ -128,10 +103,9 @@ body {
 .product-box img {
     width: 100%;
     height: auto;
-    display: block; /* Removes any default spacing below the image */
+    display: block;
 }
 
-/* Styles for the product text and link */
 .product-info {
     padding: 20px 0;
 }
@@ -156,42 +130,35 @@ body {
     border-bottom: 1px solid #000;
 }
 
-/* Styling for the navigation arrows */
 .carousel-nav {
     font-size: 36px;
     color: #555;
     cursor: pointer;
     user-select: none;
-    transform: scaleX(-1); /* Flips the left arrow to point left */
+    transform: scaleX(-1); 
 }
 
 .right-arrow {
-    transform: scaleX(1); /* Ensures the right arrow is not flipped */
+    transform: scaleX(1); 
 }
 
-/*
-    This new class styles the anchor tag that wraps the product box.
-    We remove the default underline and ensure it displays as a block.
-*/
+
 .product-box-link {
-    text-decoration: none; /* Removes the underline from the link */
-    color: inherit; /* Ensures the text color is inherited from its parent, not default blue */
-    display: block; /* Makes the entire link a block, allowing it to contain the box */
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
 }
 
-/*
-    Now, we style the actual product box. Since it's inside the link,
-    the link styles won't affect its appearance.
-*/
+
 .product-box {
     flex: 1;
     background-color: #fff;
     text-align: left;
-    transition: transform 0.3s ease; /* A nice subtle effect for hover */
+    transition: transform 0.3s ease; 
 }
 
 .product-box:hover {
-    transform: translateY(-5px); /* Moves the box up slightly on hover */
+    transform: translateY(-5px); 
 }
 
 .product-box img {
@@ -200,12 +167,10 @@ body {
     display: block;
 }
 
-/* We style the h3 inside the link to make sure it's black. */
 .product-box-link h3 {
     color: #000;
 }
 
-/* Styles for the product text and link */
 .product-info {
     padding: 20px 0;
 }
@@ -231,58 +196,49 @@ body {
 
 
 
-/* This is the Flexbox container for the entire carousel.
-    It holds the navigation arrows and the product boxes.
-*/
 .product-carousel {
     display: flex;
-    justify-content: center; /* Centers the product row within the carousel */
-    align-items: center; /* Vertically aligns all items */
-    gap: 20px; /* Space between the arrows and the product row */
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
 }
 
-/* The container for the three product boxes.
-    It also uses Flexbox to arrange the images horizontally.
-    The key change here is ensuring the product-row is centered as well.
-*/
+
 .product-row {
     display: flex;
-    justify-content: center; /* This is a new rule to ensure the product boxes are centered */
-    gap: 30px; /* Space between the product boxes */
+    justify-content: center; 
+    gap: 30px; 
 }
 
-/* Now, we make sure the .product-box has a consistent width */
+
 .product-box {
-    /* We'll set a fixed max-width to ensure the boxes don't get too big */
+    
     max-width: 300px;
     background-color: #fff;
     text-align: left;
-    transition: transform 0.3s ease; /* A nice subtle effect for hover */
+    transition: transform 0.3s ease;
 }
 
-/* This styles the anchor tag that wraps the product box. */
 .product-box-link {
-    text-decoration: none; /* Removes the underline from the link */
-    color: inherit; /* Ensures the text color is inherited from its parent, not default blue */
-    display: block; /* Makes the entire link a block, allowing it to contain the box */
+    text-decoration: none;
+    color: inherit; 
+    display: block;
      transition: transform 0.3s ease; 
 }
 
 .product-box-link:hover {
-    transform: translateY(-5px); /* Moves the box up slightly on hover */
+    transform: translateY(-5px); 
 }
 .product-box img {
-    width: 100%; /* The image will take up 100% of its parent (.product-box) width */
+    width: 100%;
     height: auto;
     display: block;
 }
 
-/* We style the h3 inside the link to make sure it's black. */
 .product-box-link h3 {
     color: #000;
 }
 
-/* Styles for the product text and link */
 .product-info {
     padding: 20px 0;
 }
@@ -308,7 +264,6 @@ body {
 
 
 
-/* Styles for the Services Section */
 .site-services {
     background-color: #fff;
     padding: 60px 25px;
@@ -346,7 +301,6 @@ body {
     color: #666;
 }
 
-/* Styles for the "Shop By Category" Section */
 .shop-by-category {
     max-width: 1200px;
     margin: 60px auto;
@@ -362,9 +316,9 @@ body {
     flex: 1;
     text-decoration: none;
     color: inherit;
-    position: relative; /* Needed to position the overlay */
+    position: relative; 
     display: block;
-    overflow: hidden; /* Hides the overlay until hover */
+    overflow: hidden; 
 }
 
 .category-link img {
@@ -375,7 +329,7 @@ body {
 }
 
 .category-link:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
 .category-overlay {
@@ -387,12 +341,12 @@ body {
     color: #000;
     text-align: center;
     padding: 15px 0;
-    transform: translateY(100%); /* Hides the overlay initially */
+    transform: translateY(100%); 
     transition: transform 0.3s ease;
 }
 
 .category-link:hover .category-overlay {
-    transform: translateY(0); /* Shows the overlay on hover */
+    transform: translateY(0);
 }
 
 .category-title {
@@ -401,7 +355,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Styles for the "Our New Arrivals" Section */
+
 .our-new-arrivals {
     max-width: 1200px;
     margin: 60px auto;
@@ -428,7 +382,6 @@ body {
     padding-bottom: 2px;
 }
 
-/* This is the Flexbox container for the four products */
 .new-arrivals-grid {
     display: flex;
     justify-content: space-between;
@@ -467,7 +420,6 @@ body {
 
 
 
-/* Styles for the "Shop By Category" Section */
 .shop-by-category {
     max-width: 1200px;
     margin: 60px auto;
@@ -483,7 +435,7 @@ body {
     flex: 1;
     text-decoration: none;
     color: inherit;
-    position: relative; /* Needed to position the info box */
+    position: relative;
     display: block;
 }
 
@@ -495,10 +447,10 @@ body {
 
 .category-info {
     position: absolute;
-    bottom: 20px; /* Moves the text up from the bottom of the image */
-    left: 20px; /* Positions the text from the left */
-    color: #fff; /* Makes the text white so it stands out */
-    background-color: transparent; /* No background color */
+    bottom: 20px; 
+    left: 20px;
+    color: #fff; 
+    background-color: transparent; 
 }
 
 .category-title {
@@ -509,12 +461,7 @@ body {
 
 
 .shop-heading {
-    /*
-        'margin-top' adds space above the heading.
-        'margin-bottom' adds space below the heading.
-        By setting them to the same value, we can center the heading
-        within the empty space between the sections.
-    */
+
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: left;
@@ -528,7 +475,7 @@ body {
 }
 
 
-/* Styles for the Newsletter Section */
+
 .newsletter-section {
     background-color: #f7f7f7;
     padding: 80px 25px;
@@ -549,7 +496,7 @@ body {
 .newsletter-form-container {
     background-color: #fff;
     padding: 10px;
-    display: inline-block; /* Allows the form container to shrink-wrap its content */
+    display: inline-block; 
 }
 
 .newsletter-form {
@@ -559,16 +506,16 @@ body {
 }
 
 .newsletter-form input[type="email"] {
-    flex-grow: 1; /* Makes the input field take up the remaining space */
+    flex-grow: 1; 
     border: 1px solid #ccc;
     padding: 10px 15px;
     font-size: 16px;
     background-color: transparent;
-    border-radius: 0; /* Removes any default rounding */
+    border-radius: 0; 
 }
 
 .newsletter-form input[type="email"]:focus {
-    outline: none; /* Removes the blue outline on focus */
+    outline: none; 
     border-color: #000;
 }
 
@@ -583,24 +530,24 @@ body {
     letter-spacing: 1px;
 }
 
-/* Styles for the Main Footer */
+
 .main-footer {
     padding: 80px 25px;
-    background-color: #fff; /* Assuming a white background */
+    background-color: #fff;
 }
 
 .footer-grid {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex; /* Creates the column layout */
-    justify-content: space-between; /* Spreads the columns out */
-    gap: 40px; /* Adds space between columns */
-    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px; 
+    flex-wrap: wrap;
 }
 
 .footer-column {
-    flex: 1; /* Allows each column to grow and shrink equally */
-    min-width: 250px; /* Prevents columns from getting too narrow on smaller screens */
+    flex: 1; 
+    min-width: 250px; 
 }
 
 .footer-column h4 {
@@ -609,9 +556,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Styles for the brand info column */
+
 .brand-name {
-    font-family: 'Playfair Display', serif; /* Use a placeholder for the font */
+    font-family: 'Playfair Display', serif; 
     font-size: 24px;
     font-weight: 700;
 }
@@ -632,9 +579,8 @@ body {
     height: 24px;
 }
 
-/* Styles for the quick links list */
 .quick-links ul {
-    list-style: none; /* Removes bullet points */
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
@@ -654,7 +600,6 @@ body {
     color: #888;
 }
 
-/* Styles for the contact us column */
 .contact-us p {
     font-size: 14px;
     line-height: 1.6;
@@ -669,5 +614,6 @@ body {
 .contact-us a:hover {
     color: #888;
 }
+
 
 
