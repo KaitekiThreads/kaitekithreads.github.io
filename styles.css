@@ -1,7 +1,4 @@
-/*
-    Basic reset to remove default browser margins and paddings.
-    This is a good practice for consistent layouts.
-*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,52 +13,41 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*
-    Styling for the main header section.
-    We give it a light gray background color and a subtle shadow.
-*/
+
 .main-header {
     background-color: #f1f1f0;
     border-bottom: 1px solid #e0e0e0;
     padding: 20px 0;
 }
 
-/*
-    This container is the key to our layout.
-    We'll use Flexbox to align our elements.
-*/
+
 .header-container {
-    max-width: 1200px; /* Limits the container width for a clean look */
-    margin: 0 auto;    /* Centers the container horizontally */
-    padding: 0 20px;   /* Adds some padding on the sides */
-    display: flex;     /* Turns this into a flex container */
-    justify-content: space-between; /* Pushes items to the far ends */
-    align-items: center; /* Vertically aligns the items in the center */
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
+    display: flex;     
+    justify-content: space-between; 
+    align-items: center;
 }
 
-/*
-    Styling for the logo text.
-*/
 .logo a {
-    font-family: 'Times New Roman', Times, serif; /* Using a classic font for the logo */
+    font-family: 'Times New Roman', Times, serif; 
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
 }
 
-/*
-    Styling the main navigation menu.
-*/
+
+
+
 .main-nav ul {
-    list-style: none; /* Removes the bullet points from the list */
-    display: flex;    /* Uses Flexbox to put list items in a row */
-    gap: 25px;       /* Adds space between the menu items */
+    list-style: none; 
+    display: flex;    
+    gap: 25px;       
 }
 
-/*
-    Styling for the individual navigation links.
-*/
+
 .main-nav ul li a {
     text-decoration: none;
     color: #555;
@@ -75,18 +61,18 @@ body {
     color: #000;
 }
 
-/* Styling for the New Collections section */
+
 .new-collections {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 25px;
-    text-align: center; /* Centers the title and paragraph */
+    text-align: center; 
 }
 
-/* Styling for the title and paragraph container */
+
 .intro-container {
     max-width: 600px;
-    margin: 0 auto 50px; /* Centers and adds bottom margin */
+    margin: 0 auto 50px;
 }
 
 .intro-container h2 {
@@ -100,9 +86,7 @@ body {
     color: #666;
 }
 
-/* This is the Flexbox container for the entire carousel.
-    It holds the navigation arrows and the product boxes.
-*/
+
 .product-carousel {
     display: flex;
     justify-content: center; /* Centers the product row within the carousel */
@@ -110,15 +94,13 @@ body {
     gap: 20px; /* Space between the arrows and the product row */
 }
 
-/* The container for the three product boxes.
-    It also uses Flexbox to arrange the images horizontally.
-*/
+
 .product-row {
     display: flex;
     gap: 30px; /* Space between the product boxes */
 }
 
-/* Styles for an individual product box */
+
 .product-box {
     flex: 1; /* Makes each box take up equal space */
     background-color: #fff;
@@ -131,7 +113,7 @@ body {
     display: block; /* Removes any default spacing below the image */
 }
 
-/* Styles for the product text and link */
+
 .product-info {
     padding: 20px 0;
 }
@@ -156,7 +138,7 @@ body {
     border-bottom: 1px solid #000;
 }
 
-/* Styling for the navigation arrows */
+
 .carousel-nav {
     font-size: 36px;
     color: #555;
@@ -169,20 +151,14 @@ body {
     transform: scaleX(1); /* Ensures the right arrow is not flipped */
 }
 
-/*
-    This new class styles the anchor tag that wraps the product box.
-    We remove the default underline and ensure it displays as a block.
-*/
+
 .product-box-link {
     text-decoration: none; /* Removes the underline from the link */
     color: inherit; /* Ensures the text color is inherited from its parent, not default blue */
     display: block; /* Makes the entire link a block, allowing it to contain the box */
 }
 
-/*
-    Now, we style the actual product box. Since it's inside the link,
-    the link styles won't affect its appearance.
-*/
+
 .product-box {
     flex: 1;
     background-color: #fff;
@@ -200,12 +176,11 @@ body {
     display: block;
 }
 
-/* We style the h3 inside the link to make sure it's black. */
 .product-box-link h3 {
     color: #000;
 }
 
-/* Styles for the product text and link */
+
 .product-info {
     padding: 20px 0;
 }
@@ -231,9 +206,7 @@ body {
 
 
 
-/* This is the Flexbox container for the entire carousel.
-    It holds the navigation arrows and the product boxes.
-*/
+
 .product-carousel {
     display: flex;
     justify-content: center; /* Centers the product row within the carousel */
@@ -241,26 +214,22 @@ body {
     gap: 20px; /* Space between the arrows and the product row */
 }
 
-/* The container for the three product boxes.
-    It also uses Flexbox to arrange the images horizontally.
-    The key change here is ensuring the product-row is centered as well.
-*/
+
 .product-row {
     display: flex;
     justify-content: center; /* This is a new rule to ensure the product boxes are centered */
     gap: 30px; /* Space between the product boxes */
 }
 
-/* Now, we make sure the .product-box has a consistent width */
+
 .product-box {
-    /* We'll set a fixed max-width to ensure the boxes don't get too big */
+    
     max-width: 300px;
     background-color: #fff;
     text-align: left;
     transition: transform 0.3s ease; /* A nice subtle effect for hover */
 }
 
-/* This styles the anchor tag that wraps the product box. */
 .product-box-link {
     text-decoration: none; /* Removes the underline from the link */
     color: inherit; /* Ensures the text color is inherited from its parent, not default blue */
@@ -277,7 +246,7 @@ body {
     display: block;
 }
 
-/* We style the h3 inside the link to make sure it's black. */
+
 .product-box-link h3 {
     color: #000;
 }
@@ -669,5 +638,6 @@ body {
 .contact-us a:hover {
     color: #888;
 }
+
 
 
